@@ -1,0 +1,51 @@
+@import './variables', './mixins';
+
+.header {
+    // background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 10vh;
+
+    .logo {
+        span {
+            font-family: 'Montserrat';
+            font-size: 20px;
+            line-height: 24px;
+            color: $mainColor;
+
+            &:first-child {
+                font-weight: 700;
+                margin-right: 8px;
+            }
+
+            &:last-child {
+                font-weight: 900;
+            }
+
+        }
+    }
+
+    .point-div {
+        background-color: $mainColor;
+        padding: 10px;
+        border-radius: 20px;
+
+        span {
+            color: $secondColor;
+            font-family: 'Quicksand';
+            font-size: 14px;
+            line-height: 20px;
+
+            &:first-child {
+                font-weight: 500;
+            }
+
+            &:last-child {
+                font-weight: 700;
+            }
+        }
+    }
+}
+

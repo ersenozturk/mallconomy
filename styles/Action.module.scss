@@ -1,0 +1,53 @@
+@import './variables';
+
+  .each {
+   
+    background: $secondColor;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    align-items: center;
+    height: 100px;
+    transition: all .3s;
+    &:hover{
+      background-color: $mainBgColor;
+    }
+
+    .imgDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .infoDiv {
+      font-family: 'Quicksand';
+
+      h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: $mainColor;
+      }
+
+      p {
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #999999;
+      }
+    }
+
+    .pointDiv {
+      p {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: $colorPoint;
+      }
+    }
+
+  }
